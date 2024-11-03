@@ -1,0 +1,56 @@
+Funcionalidades Implementadas
+
+1.Registro de Usuarios
+
+-Los usuarios pueden registrarse en la plataforma, creando un nombre de usuario y una contraseña.
+-La contraseña se guarda de forma segura, y los usuarios utilizan estas credenciales para acceder a sus muros personales.
+
+2.Inicio de Sesión
+
+-Los usuarios pueden iniciar sesión con su nombre de usuario y contraseña.
+-Al iniciar sesión, se registra la acción en el archivo de log con la fecha y hora.
+
+3.Publicación de Noticias
+
+-Los usuarios pueden publicar noticias en su propio muro.
+-Cada noticia se guarda como un archivo de texto en el directorio del usuario, con un sello de tiempo como nombre.
+-Esta acción también se registra en el archivo de log.
+
+4.Respuestas a Noticias
+
+-Los usuarios pueden ver el muro de otros usuarios y responder a sus noticias.
+-Las respuestas se guardan en el mismo archivo de texto de la noticia.
+-Se registra cada respuesta en el archivo de log.
+
+5.Subida de Imágenes
+
+-Los usuarios pueden adjuntar imágenes a sus publicaciones.
+-Las imágenes se almacenan en un subdirectorio imagenes dentro del directorio del usuario.
+-Se muestra la imagen cuando se visualiza la noticia en el muro.
+-Cada subida de imagen se registra en el archivo de log.
+
+6.Sistema de "Me gusta"
+
+-Los usuarios pueden indicar que les gusta una noticia.
+-Se muestra el contador de "me gusta" en cada noticia.
+-Cada acción de "me gusta" se registra en el archivo de log.
+
+7.Registro de Visitas al Muro de un Usuario
+
+-Se cuenta el número de veces que otros usuarios visitan el muro de un usuario.
+-Este contador de visitas se muestra en la página del muro.
+-Cada visita se registra en el archivo de log.
+
+8.Archivo de Logs
+
+-Todas las acciones de los usuarios (registro, inicio de sesión, publicación, respuestas, "me gusta", visitas) se registran en un archivo log.txt.
+-Cada entrada incluye la fecha, hora y una descripción de la acción realizada.
+-Descripción de la Estructura de Archivos
+
+La estructura de los archivos se compone:
+
+-index.php: Página de inicio de sesión.
+-registrar.php: Página de registro de usuarios.
+-muro.php: Página principal donde el usuario puede ver y publicar noticias.
+-responder.php: Script para responder a noticias.
+-log.txt: Archivo de texto que guarda un registro de las acciones de los usuarios en la plataforma.
