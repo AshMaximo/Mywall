@@ -12,11 +12,15 @@ if (isset($_GET['usuario'])) {
         die("El usuario no existe.");
     }
     $noticias = glob("$userDir/*.txt");
+    
+    $visitasFile = "$userDir/visitas.txt";
+    $visitas = file_exists($visitasFile) ? (int) file_get_contents($visitasFile) : 0;
+    $visitas++;
+    file_put_contents($visitasFile, $visitas);
 } else {
     die("Usuario no especificado.");
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,6 +28,7 @@ if (isset($_GET['usuario'])) {
 </head>
 <body>
     <h2>Muro de <?php echo htmlspecialchars($username); ?></h2>
+    <p>Visitas al muro: <?php echo $visitas; ?></p>
     
     <h3>Noticias</h3>
     <?php foreach ($noticias as $noticia): ?>

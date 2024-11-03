@@ -1,0 +1,4 @@
+[2024-11-03 19:04:57] Usuario Ashy se ha registrado
+[2024-11-03 19:05:06] Usuario Ashy ha iniciado sesión
+[2024-11-03 19:12:38] Usuario Ashy publicó una noticia con imagen.
+[2024-11-03 19:18:13] Usuario Ashy publicó una noticia con imagen.
