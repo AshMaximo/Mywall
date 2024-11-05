@@ -44,4 +44,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     }
 }
 // Obtiene todas las noticias del usuario
-$noticias = glob("usuarios/$username/*.txt"); // Busca todos los archivos .txt en el directorio del usuario (cada uno es una noticia)
+$noticias = glob("usuarios/*/*.txt"); // Busca todos los archivos .txt en el directorio del usuario (cada uno es una noticia)

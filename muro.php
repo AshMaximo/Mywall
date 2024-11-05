@@ -16,6 +16,11 @@ include 'Controlador/controlador_muro.php'
         <input type="file" name="imagen" accept="image/*">
         <button type="submit">Publicar</button>
     </form>
+    <h3>Log out</h3>
+    
+    <form method="POST" action="logout.php">
+        <button type="submit">Log out</button>
+    </form>
 
     <h3>Mis Noticias</h3>
     <?php foreach ($noticias as $noticia): ?>

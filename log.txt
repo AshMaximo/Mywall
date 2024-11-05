@@ -46,3 +46,9 @@
 [2024-11-05 22:26:35] El usuario Ashy ha iniciado sesion
 [2024-11-05 22:31:16] Usuario Ashy ha publicado una noticia.
 [2024-11-05 22:32:54] Usuario Ashy ha publicado una noticia.
+[2024-11-05 22:50:21] Usuario Ashy ha respondido una noticia.
+[2024-11-05 22:50:37] El usuario Ashy ha iniciado sesion
+[2024-11-05 22:51:48] El usuario Ashy ha iniciado sesion
+[2024-11-05 22:52:18] El usuario Ashy ha iniciado sesion
+[2024-11-05 22:52:54] El usuario Ashy ha iniciado sesion
+[2024-11-05 22:53:15] El usuario Ashy ha iniciado sesion

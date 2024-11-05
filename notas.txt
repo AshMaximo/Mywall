@@ -17,8 +17,6 @@ Funcionalidades Implementadas
 -Esta acción también se registra en el archivo de log.
 
 4.Respuestas a Noticias
-
--Los usuarios pueden ver el muro de otros usuarios y responder a sus noticias.
 -Las respuestas se guardan en el mismo archivo de texto de la noticia.
 -Se registra cada respuesta en el archivo de log.
 
@@ -29,12 +27,6 @@ Funcionalidades Implementadas
 -Se muestra la imagen cuando se visualiza la noticia en el muro.
 -Cada subida de imagen se registra en el archivo de log.
 
-6.Sistema de "Me gusta"
-
--Los usuarios pueden indicar que les gusta una noticia.
--Se muestra el contador de "me gusta" en cada noticia.
--Cada acción de "me gusta" se registra en el archivo de log.
-
 7.Registro de Visitas al Muro de un Usuario
 
 -Se cuenta el número de veces que otros usuarios visitan el muro de un usuario.
@@ -43,14 +35,13 @@ Funcionalidades Implementadas
 
 8.Archivo de Logs
 
--Todas las acciones de los usuarios (registro, inicio de sesión, publicación, respuestas, "me gusta", visitas) se registran en un archivo log.txt.
+-Todas las acciones de los usuarios (registro, inicio de sesión, publicación, respuestas) se registran en un archivo log.txt.
 -Cada entrada incluye la fecha, hora y una descripción de la acción realizada.
--Descripción de la Estructura de Archivos
-
+9. Boton Logout
+-Puede salir
 La estructura de los archivos se compone:
 
 -index.php: Página de inicio de sesión.
 -registrar.php: Página de registro de usuarios.
 -muro.php: Página principal donde el usuario puede ver y publicar noticias.
--responder.php: Script para responder a noticias.
 -log.txt: Archivo de texto que guarda un registro de las acciones de los usuarios en la plataforma.
