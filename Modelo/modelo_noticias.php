@@ -8,6 +8,7 @@ function crearNoticia($username, $noticia): bool
 
 
     $noticia = "[$username:$noticia]";
+
     if (file_put_contents($noticiaFile, $noticia)) { // Guarda la noticia en el archivo de texto
         return true;
     };
@@ -36,6 +37,6 @@ function crearNoticiaConImagen($username, $noticia, $imagen): bool
 }
 function responderNoticia($username, $noticia, $respuesta)
 {
-    $respuesta = "[$username:$respuesta]";
+    $respuesta = PHP_EOL . "[$username:$respuesta]";
     file_put_contents($noticia, $respuesta, FILE_APPEND);
 }

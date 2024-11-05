@@ -11,7 +11,8 @@ include 'Controlador/controlador_muro.php'
 <body>
     <h2>Bienvenido, <?php echo htmlspecialchars($username); ?></h2>
     <form method="POST" action="muro.php" enctype="multipart/form-data">
-        <textarea name="contenido" placeholder="Escribe tu noticia aquí..." required></textarea>
+        <textarea name="noticia" placeholder="Escribe tu noticia aquí..." required></textarea>
+        <input type="hidden" name="action" value="publicar">
         <input type="file" name="imagen" accept="image/*">
         <button type="submit">Publicar</button>
     </form>
@@ -33,10 +34,15 @@ include 'Controlador/controlador_muro.php'
             }
             ?>
             <form method="POST" action="muro.php">
-                <input type="hidden" name="noticia" value="<?php echo basename($noticia); ?>">
-                <input type="hidden" name="username" value="<?php echo basename($username); ?>">
+                <input type="hidden" name="noticia" value="<?php echo $noticia; ?>">
+                <input type="hidden" name="action" value="responder">
                 <input type="text" name="respuesta" placeholder="Escribe una respuesta..." required>
                 <button type="submit">Responder</button>
+            </form>
+            <form method="POST" action="muro.php">
+                <input type="hidden" name="noticia" value="<?php echo $noticia; ?>">
+                <input type="hidden" name="action" value="meGusta">
+                <button type="submit">Like</button>
             </form>
         </div>
     <?php endforeach; ?>
