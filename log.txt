@@ -52,3 +52,5 @@
 [2024-11-05 22:52:18] El usuario Ashy ha iniciado sesion
 [2024-11-05 22:52:54] El usuario Ashy ha iniciado sesion
 [2024-11-05 22:53:15] El usuario Ashy ha iniciado sesion
+[2024-11-05 23:09:53] El usuario Javito ha iniciado sesion
+[2024-11-05 23:10:01] Usuario Javito ha respondido una noticia.

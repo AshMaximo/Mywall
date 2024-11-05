@@ -44,11 +44,6 @@ include 'Controlador/controlador_muro.php'
                 <input type="text" name="respuesta" placeholder="Escribe una respuesta..." required>
                 <button type="submit">Responder</button>
             </form>
-            <form method="POST" action="muro.php">
-                <input type="hidden" name="noticia" value="<?php echo $noticia; ?>">
-                <input type="hidden" name="action" value="meGusta">
-                <button type="submit">Like</button>
-            </form>
         </div>
     <?php endforeach; ?>
 </body>
